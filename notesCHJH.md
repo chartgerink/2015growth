@@ -11,4 +11,6 @@ Abstracts
 # May 6, 2015
 1. Download day!
 2. Download from [here](http://web.b.ebscohost.com/ehost/search/advanced?sid=e79d90bb-d764-4367-ba3b-d19d65d594e1%40sessionmgr198&vid=3&hid=110)
-3. Criteria: (i) Publication type: Peer Reviewed Journal, (ii) 
+3. Criteria: (i) Publication type: Peer Reviewed Journal, (ii) year, (iii) abstract.
+4. Note that searches that yield 0 results default to smart text searching. We delete these searches in the end, yielding skipping numbers in the search numbers (i.e., S58 can skip to S60 if zero results were in S59). See example in screenshot1.jpg
+5. 
