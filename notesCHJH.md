@@ -17,4 +17,7 @@ Abstracts
 # August 6, 2015
 1. Talked about the project with Jelte. Considering that the coverage of abstracts as in `data/psycinfo abstract coverage.xls` is not stable over the years, we decided to do sensitivity analyses eliminating years with more than .1, .2, or .3 of abstracts missing (i.e., coverage >.9, >.8, >.7).
 2. The file `data/psycinfo abstract coverage.xls` was received from PsycINFO directly. Email conversation available `archive/psycinfo emails.pdf`.
-3. 
+
+# August 14, 2015
+1. Not running the regressions anymore, so point 1 from august 6, 2015 is redundant
+2. Downloaded all abstracts from each search term, to sample from for checking coverage of the search.
