@@ -1,0 +1,33 @@
+Coding criteria definition
+
+Question for criteria:
+"When does the abstract appropriately cover the search term?"
+0 = Not covered
+1 = covered
+
+Term: "bayes"
+Criterium: Article concerns Bayesian statistics or used a Bayesian analysis.
+
+Term: "corrigenda"
+Criterium: Article corrects an earlier article
+
+Term: "critique"
+Criterium: Article criticises an earlier article, theory, or set of studies. 
+
+Term: "disconfirms"
+Criterium: Article attempts, succeeds, or discusses disconfirming evidence for a certain hypothesis or theory. 
+
+Term: "falsenegative"
+Criterium: Article discusses or studies the notion of a false negative in the statistical sense (type II error)
+
+Term: "falsepositive"
+Criterium: Article discusses or studies the notion of a false positive in the statistical sense (type I error)
+
+Term: "metaanalysis"
+Criterium: Article reports a meta-analysis or studies the method of meta-analysis.
+
+Term: "reanalysis"
+Criterium: Article reports on a re-analysis of data from an article published earlier or of data in a repository.
+
+Term: "replications"
+Criterium: Article refers to reported empirical results (in that article) as “replication” or discusses the issue of replication.

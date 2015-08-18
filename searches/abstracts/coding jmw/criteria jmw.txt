@@ -1,4 +1,7 @@
 Coding criteria definition (independent by JMW and CHJH, later to be consolidated)
+
+Question for criteria:
+"When does the abstract appropriately cover the search term?"
 0 = Not covered
 1 = covered
 
