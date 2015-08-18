@@ -21,3 +21,7 @@ Abstracts
 # August 14, 2015
 1. Not running the regressions anymore, so point 1 from august 6, 2015 is redundant
 2. Downloaded all abstracts from each search term, to sample from for checking coverage of the search.
+
+# August 18, 2015
+1. Note that retractions were not searched again because these were already manually checked!
+2. 

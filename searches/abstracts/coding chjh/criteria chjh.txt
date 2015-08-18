@@ -1,0 +1,30 @@
+Coding criteria definition (independent by JMW and CHJH, later to be consolidated)
+0 = Not covered
+1 = covered
+
+Term: "bayes"
+Criterium: 
+
+Term: "corrigenda"
+Criterium:
+
+Term: "critique"
+Criterium: 
+
+Term: "disconfirms"
+Criterium: 
+
+Term: "falsenegative"
+Criterium: 
+
+Term: "falsepositive"
+Criterium: 
+
+Term: "metaanalysis"
+Criterium: 
+
+Term: "reanalysis"
+Criterium: 
+
+Term: "replications"
+Criterium: 
