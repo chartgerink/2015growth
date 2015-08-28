@@ -2,11 +2,11 @@ setwd(choose.dir())
 
 if(!require(XML)){install.packages('XML')}
 
-files <- list.files('searches/abstracts')
+files <- list.files('searches/abstracts/xml')
 files <- files[grep('.*.xml', files)]
 
 for(file in files){
-  x <- xmlParse(paste0('searches/abstracts/', file))
+  x <- xmlParse(paste0('searches/abstracts/xml/', file))
   x <- xmlToDataFrame(x)  
 
   index <- sort(sample(x = 1 : dim(x)[1], size = 25, replace = FALSE))
