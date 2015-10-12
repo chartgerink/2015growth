@@ -25,6 +25,8 @@ for(file in files){
 psych::cohen.kappa(cbind(chjh, jmw))
 sum(ifelse(chjh == jmw, 0 , 1))
 cbind(filessave, abstract, chjh, jmw)[!chjh == jmw, ]
+mean(chjh[chjh == jmw])
+length(chjh[chjh == jmw])
 
 # Excluding false negatives and false positives, because CHJH added these out of interest
 # Might lack specificity
@@ -42,3 +44,5 @@ for(file in files){
 
 psych::cohen.kappa(cbind(chjh, jmw))
 sum(ifelse(chjh == jmw, 0 , 1))
+mean(chjh[chjh == jmw])
+length(chjh[chjh == jmw])

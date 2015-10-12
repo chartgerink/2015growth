@@ -26,4 +26,7 @@ Abstracts
 1. Note that retractions were not searched again because these were already manually checked!
 2. Updated `critique_abstracts.xml` because it seemed that there was incorrect extraction, which I noted when coding.
 3. Forgot that I used `.bib -> .xml`, so deleted them earlier today. Restored them now.
-4. 
+
+# October 12, 2015
+1. Decided to drop the analyses on false positives and false negatives because CHJH added these on the fly and Jelte did not want them in there.
+2. 
