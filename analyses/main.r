@@ -1,7 +1,13 @@
 # Set to folder
 setwd(choose.dir())
+library(plyr)
 
 dat <- read.table('data/data.csv', sep = ";", dec = ".", header = TRUE)
+
+articles <- ddply(dat, .(articles, Year), .fun = function(x) sum(x$articles))
+articles1950_1982 <- sum(articles$V1[articles$Year <= 1982])
+articles1983_2014 <- sum(articles$V1[articles$Year > 1982])
+prop.
 
 # Creating the proportion variables
 dat$meta.analysis.prop <- dat$meta.analysis / dat$articles
@@ -23,21 +29,24 @@ dat$dichYear <- as.factor(ifelse(dat$Year <= 1982, 0, 1))
 # 1 = 1983-2014
 mean(dat$meta.analysis.prop[dat$dichYear == 0])
 mean(dat$meta.analysis.prop[dat$dichYear == 1])
+
 mean(dat$corrigenda.prop[dat$dichYear == 0])
 mean(dat$corrigenda.prop[dat$dichYear == 1])
-mean(dat$critique.prop[dat$dichYear == 0])
-mean(dat$critique.prop[dat$dichYear == 1])
-mean(dat$reanalyses.prop[dat$dichYear == 0])
-mean(dat$reanalyses.prop[dat$dichYear == 1])
-mean(dat$replications.prop[dat$dichYear == 0])
-mean(dat$replications.prop[dat$dichYear == 1])
-mean(dat$disconfirms.prop[dat$dichYear == 0])
-mean(dat$disconfirms.prop[dat$dichYear == 1])
+
 mean(dat$retractions.prop[dat$dichYear == 0])
 mean(dat$retractions.prop[dat$dichYear == 1])
-mean(dat$falsenegatives.prop[dat$dichYear == 0])
-mean(dat$falsenegatives.prop[dat$dichYear == 1])
-mean(dat$falsepositives.prop[dat$dichYear == 0])
-mean(dat$falsepositives.prop[dat$dichYear == 1])
+
+mean(dat$reanalyses.prop[dat$dichYear == 0])
+mean(dat$reanalyses.prop[dat$dichYear == 1])
+
+mean(dat$replications.prop[dat$dichYear == 0])
+mean(dat$replications.prop[dat$dichYear == 1])
+
+mean(dat$disconfirms.prop[dat$dichYear == 0])
+mean(dat$disconfirms.prop[dat$dichYear == 1])
+
+mean(dat$critique.prop[dat$dichYear == 0])
+mean(dat$critique.prop[dat$dichYear == 1])
+
 mean(dat$bayes.prop[dat$dichYear == 0])
 mean(dat$bayes.prop[dat$dichYear == 1])
