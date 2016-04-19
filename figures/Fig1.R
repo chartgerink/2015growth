@@ -6,7 +6,7 @@ library(ggplot2)
 library(gtable)
 source('functions//multiplot.r')
 
-dat <- read.table('data/data.csv', sep = ";", dec = ".", header = TRUE)
+dat <- read.table('data/data.csv', sep = ",", dec = ".", header = TRUE)
 
 y1 <- list(NULL)
 y2 <- list(NULL)

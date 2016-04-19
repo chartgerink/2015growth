@@ -2,12 +2,12 @@
 setwd(choose.dir())
 library(plyr)
 
-dat <- read.table('data/data.csv', sep = ";", dec = ".", header = TRUE)
+dat <- read.table('data/data.csv', sep = ",", dec = ".", header = TRUE)
 
 articles <- ddply(dat, .(articles, Year), .fun = function(x) sum(x$articles))
 articles1950_1982 <- sum(articles$V1[articles$Year <= 1982])
 articles1983_2014 <- sum(articles$V1[articles$Year > 1982])
-prop.
+
 
 # Creating the proportion variables
 dat$meta.analysis.prop <- dat$meta.analysis / dat$articles
@@ -17,8 +17,6 @@ dat$reanalyses.prop <- dat$reanalyses / dat$articles
 dat$replications.prop <- dat$replications / dat$articles 
 dat$disconfirms.prop <- dat$disconfirms / dat$articles 
 dat$retractions.prop <- dat$retractions / dat$articles 
-dat$falsenegatives.prop <- dat$falsenegatives / dat$articles 
-dat$falsepositives.prop <- dat$falsepositives / dat$articles 
 dat$bayes.prop <- dat$bayes / dat$articles 
 
 # Dichotomizing data
